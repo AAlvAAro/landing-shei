@@ -1,10 +1,7 @@
-import { type MDXComponents as MDXComponentsType } from 'mdx/types'
+import { type MDXComponents } from 'mdx/types'
 
-import { MDXComponents } from '@/components/MDXComponents'
-
-export function useMDXComponents(components: MDXComponentsType) {
+export function useMDXComponents(components: MDXComponents) {
   return {
     ...components,
-    ...MDXComponents,
   }
 }
